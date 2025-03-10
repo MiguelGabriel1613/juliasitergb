@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB vs CMYK - Explicação Simples</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        header, footer {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        RGB vs CMYK - Como Funcionam?
+    </header>
+    
+    <div class="container">
+        <h2>🔴🟢🔵 O que é RGB?</h2>
+        <p>
+            O modelo RGB (Red, Green, Blue) é um sistema de cores aditivas utilizado em dispositivos eletrônicos, como monitores, televisores e câmeras digitais. Ele se baseia na combinação das três cores primárias da luz — vermelho (R), verde (G) e azul (B) — para criar uma ampla gama de cores.
+        </p>
+
+        <div class="image-group">
+            <h2>Como funciona?</h2>
+
+            <p>Cada cor no modelo RGB é representada por um valor numérico que varia de 0 a 255 (em um sistema de 8 bits). Isso significa que:</p>
+            <p>(0, 0, 0) representa preto (ausência de luz).</p>
+            <p>(255, 255, 255) representa branco (máxima intensidade das três cores). </p>
+            <p>(255, 0, 0) é vermelho puro, (0, 255, 0) é verde puro e (0, 0, 255) é azul puro.</p>
+
+            <h2>A mistura dessas cores cria tons diferentes. Por exemplo:</h2>
+
+            <p>(255, 255, 0) → Amarelo (vermelho + verde).</p>
+            <p>(0, 255, 255) → Ciano (verde + azul).</p> 
+            <p> (255, 0, 255) → Magenta (vermelho + azul).<br></p>
+
+            <img src="fotos_rgb/6f793024-fade-4683-86ef-f086d1fbdec5.jpeg" alt="Exemplo do modelo RGB">
+            <img src="fotos_rgb/af46320d-b410-4898-8307-9fffdd23ffe2.jpeg" alt="Modelo RGB aditivo">
+
+            <p>O pixel no modelo RGB é formado por três subpixels: vermelho (R), verde (G) e azul (B). Cada subpixel emite luz com intensidade variando de 0 a 255.
+
+                Funcionamento:
+                
+                1. Cada subpixel controla a intensidade de sua cor.
+                
+                2. A combinação das três cores cria a cor final do pixel.
+                
+                Exemplo: (255, 0, 0) → Vermelho; (0, 255, 255) → Ciano.
+                
+                3. Milhares/milhões de pixels compõem uma imagem na tela, mudando rapidamente para formar vídeos e animações.
+
+                Resumindo: o pixel exibe cores ajustando a intensidade de R, G e B, criando uma ampla gama de cores visíveis.</p>
+
+            <section id="tabela-cores">
+                <p>Aqui está uma tabela com cores e valores teóricos no sistema RGB:</p>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Nome da Cor</th>
+                            <th>R</th>
+                            <th>G</th>
+                            <th>B</th>
+                            <th>RGB Completo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="preto">
+                            <td>Preto</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>rgb(0, 0, 0)</td>
+                        </tr>
+                        <tr id="branco">
+                            <td>Branco</td>
+                            <td>255</td>
+                            <td>255</td>
+                            <td>255</td>
+                            <td>rgb(255, 255, 255)</td>
+                        </tr>
+                        <tr id="vermelho">
+                            <td>Vermelho</td>
+                            <td>255</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>rgb(255, 0, 0)</td>
+                        </tr>
+                        <tr id="verde">
+                            <td>Verde</td>
+                            <td>0</td>
+                            <td>255</td>
+                            <td>0</td>
+                            <td>rgb(0, 255, 0)</td>
+                        </tr>
+                        <tr id="azul">
+                            <td>Azul</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>255</td>
+                            <td>rgb(0, 0, 255)</td>
+                        </tr>
+                        <tr id="amarelo">
+                            <td>Amarelo</td>
+                            <td>255</td>
+                            <td>255</td>
+                            <td>0</td>
+                            <td>rgb(255, 255, 0)</td>
+                        </tr>
+                        <tr id="ciano">
+                            <td>Ciano</td>
+                            <td>0</td>
+                            <td>255</td>
+                            <td>255</td>
+                            <td>rgb(0, 255, 255)</td>
+                        </tr>
+                        <tr id="magenta">
+                            <td>Magenta</td>
+                            <td>255</td>
+                            <td>0</td>
+                            <td>255</td>
+                            <td>rgb(255, 0, 255)</td>
+                        </tr>
+                        <tr id="laranja">
+                            <td>Laranja</td>
+                            <td>255</td>
+                            <td>165</td>
+                            <td>0</td>
+                            <td>rgb(255, 165, 0)</td>
+                        </tr>
+                        <tr id="roxo-escuro">
+                            <td>Roxo Escuro</td>
+                            <td>128</td>
+                            <td>0</td>
+                            <td>128</td>
+                            <td>rgb(128, 0, 128)</td>
+                        </tr>
+                        <tr id="azul-claro">
+                            <td>Azul Claro</td>
+                            <td>135</td>
+                            <td>206</td>
+                            <td>250</td>
+                            <td>rgb(135, 206, 250)</td>
+                        </tr>
+                        <tr id="verde-musgo">
+                            <td>Verde Musgo</td>
+                            <td>85</td>
+                            <td>107</td>
+                            <td>47</td>
+                            <td>rgb(85, 107, 47)</td>
+                        </tr>
+                        <tr id="rosa-claro">
+                            <td>Rosa Claro</td>
+                            <td>255</td>
+                            <td>182</td>
+                            <td>193</td>
+                            <td>rgb(255, 182, 193)</td>
+                        </tr>
+                        <tr id="cinza-medio">
+                            <td>Cinza Médio</td>
+                            <td>169</td>
+                            <td>169</td>
+                            <td>169</td>
+                            <td>rgb(169, 169, 169)</td>
+                        </tr>
+                        <tr id="marrom-avermelhado">
+                            <td>Marrom Avermelhado</td>
+                            <td>139</td>
+                            <td>69</td>
+                            <td>19</td>
+                            <td>rgb(139, 69, 19)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <h2>🖨️ O que é CMYK?</h2>
+        <p>
+            O modelo CMYK (Ciano, Magenta, Amarelo e Preto – "Key") é um sistema de cores subtrativo usado principalmente em impressões. Diferente do RGB, que trabalha com luz, o CMYK funciona absorvendo certas cores e refletindo outras.
+        </p>
+        <div class="image-group">
+            <h2>Funcionamento:</h2>
+            <p>As tintas Ciano (C), Magenta (M) e Amarelo (Y) combinam-se para criar cores secundárias.</p>
+            <p>O preto (K) é adicionado para profundidade e contraste, já que a mistura de C, M e Y nem sempre gera um preto puro.<br></p>
+            <img src="fotos_cmyk/728f600d-68b5-4943-8569-4c33367c5cff.jpeg" alt="Exemplo do modelo CMYK">
+            <img src="fotos_cmyk/91292273-0278-4d4a-97b8-be57a5210019.jpeg" alt="Cores CMYK em impressão">
+         
+        </div>
+        <div class="image-group">
+            <h2>Comparação do RGB com CMYK </h2>
+            <p>O RGB é um modelo de cores aditivo, usado em telas (monitores, TVs, celulares). Ele combina vermelho, verde e azul para formar cores, onde a soma máxima gera branco e a ausência gera preto.</p>
+            <p>O CMYK é um modelo subtrativo, usado em impressões. Ele usa ciano, magenta, amarelo e preto, onde a mistura das cores remove luz refletida do papel. A soma total gera preto, e a ausência de tinta resulta em branco (cor do papel).</p>
+            <h3>RGB é para telas (luz)</h3>
+            <h4>CMYK é para impressões (tinta)<br>.</h4>
+            
+            <img src="fotos_diferencas/86c48788-8948-48f5-9eb0-5e88ba048cc9.jpeg" alt="">
+            <img src="fotos_diferencas/b3cacbd2-f353-42b0-b245-99057ed848e8.jpeg" alt="">
+        </div>
+    </div>
+
+    <footer>
+    - Julia 3° A-
+    </footer>
+</body>
+</html>
